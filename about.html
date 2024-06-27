@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About Page</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <header>
-        <div class="sticky">
-            <h1>jamil shah</h1>
-            <p>Senior at Michigan State University<br>Student Assistant at State of Michigan (DTMB)</p>
-            <nav>
-                <a href="index.html">Home</a> | 
-                <a href="about.html">About Me</a>
-            </nav>
+    <title>About Jamil Shah</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <header class="col-md-2 bg-dark text-light vh-100 d-flex flex-column justify-content-center position-fixed">
+            <div class="p-3">
+                <h1 class="h4">jamil shah</h1>
+                <p>Senior at <a href="https://msu.edu" class="text-light">Michigan State University</a></p>
+                <p>Student Assistant at <a href="https://www.michigan.gov/dtmb" class="text-light">State of Michigan (DTMB)</a></p>
+                <nav>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="index.html" class="text-light">Home</a>
+                            <ul class="list-unstyled dropdown">
+                                <li class="my-2"><a href="about.html" class="text-light">About Me</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+            
+            <main class="col-md-10 offset-md-2 bg-light vh-100">
+                <div class="p-5">
+                    <section id="about">
+                        <h2 class="h5">About Me</h2>
+                        <p>Hey, I’m Jamil Shah. Born in Kabul, Afghanistan, I moved to the United States with my family when I was five. East Lansing, Michigan has been home for the last 17 years, so I guess you could say I’m pretty settled here.</p>
+                        
+                        <p>I started my college life at the University of Michigan-Flint but transferred to Michigan State University after my freshman year—thanks to Covid-19 and the move back to East Lansing. It’s been a smooth ride since then, and I’m getting the best of what MSU has to offer.</p>
+                        
+                        <p>I've always had a knack for cybersecurity. It’s like solving a never-ending puzzle that keeps getting more complicated. My classes at MSU, like IT Network Management and Applied Programming, have been pretty engaging. I also worked as a Research Lab Assistant, diving into data analysis on public sentiment towards ChatGPT. Fun stuff if you’re into that kind of thing.</p>
+                        
+                        <p>Currently, I work part-time as a Student Assistant at the Energy Center for the Department of Technology, Management, and Budget at the State of Michigan. The Energy Center is basically a power plant, and I handle emissions reports and other IT-related tasks. It’s a good gig that keeps me busy and pays the bills.</p>
+                        
+                        <p>When I’m not working or studying, I like to lift weights and play Dota 2. Lifting is a good way to stay fit, and Dota 2 keeps my mind sharp with all its strategies. It’s a nice balance between physical activity and mental relaxation.</p>
+                        
+                        <p>So yeah, that’s a bit about me. I’m into cybersecurity, doing my bit at the Energy Center, and finding time for some lifting and gaming in between.</p>
+                        <img src="chem club.PNG" alt="Me in chemistry club" class="img-fluid mx-auto d-block">
+                    </section>
+                </div>
+            </main>
         </div>
-    </header>
-    
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Hey, I’m Jamil Shah. Born in Kabul, Afghanistan, I moved to the United States with my family when I was five. East Lansing, Michigan has been home for the last 17 years, so I guess you could say I’m pretty settled here.</p>
-            
-            <p>I started my college life at the University of Michigan-Flint but transferred to Michigan State University after my freshman year—thanks to Covid-19 and the move back to East Lansing. It’s been a smooth ride since then, and I’m getting the best of what MSU has to offer.</p>
-            
-            <p>I've always had a knack for cybersecurity. It’s like solving a never-ending puzzle that keeps getting more complicated. My classes at MSU, like IT Network Management and Applied Programming, have been pretty engaging. I also worked as a Research Lab Assistant, diving into data analysis on public sentiment towards ChatGPT. Fun stuff if you’re into that kind of thing.</p>
-            
-            <p>Currently, I work part-time as a Student Assistant at the Energy Center for the Department of Technology, Management, and Budget at the State of Michigan. The Energy Center is basically a power plant, and I handle emissions reports and other IT-related tasks. It’s a good gig that keeps me busy and pays the bills.</p>
-            
-            <p>When I’m not working or studying, I like to lift weights and play Dota 2. Lifting is a good way to stay fit, and Dota 2 keeps my mind sharp with all its strategies. It’s a nice balance between physical activity and mental relaxation.</p>
-            
-            <p>So yeah, that’s a bit about me. I’m into cybersecurity, doing my bit at the Energy Center, and finding time for some lifting and gaming in between.</p>
-            <img src="chem club.PNG" alt="Jamil Shah">
-        </section>
-    </main>
+    </div>
 </body>
 </html>

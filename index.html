@@ -1,93 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jamil Shah's Portfolio</title>
-    <link rel="stylesheet" href="screen.css">
-  </head>
-  <body>
-    <header>
-        <div class="sticky">
-            <h1>jamil shah</h1>
-            <p>Senior at Michigan State University<br>Student Assistant at State of Michigan (DTMB)</p>
-            <nav>
-                <a href="index.html">Home</a> | 
-                <a href="about.html">About Me</a>
-            </nav>
-        </div>
-    </header>
-    
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>jamilshah.com, a professional portfolio, is my journey and expertise in Cybersecurity, Information Security, and Computer Science. Showcased through my education, background, skills, and hands-on experience with projects.</p>
-        </section>
-        
-        <section id="resume">
-            <h2>Resume</h2>
-            <div class="education">
-                <h3>Education</h3>
-                <p><strong>Michigan State University, East Lansing, MI</strong></p>
-                <p>Bachelor of Arts in Information Science</p>
-                <p>Minor: Security Management</p>
-                <p>GPA: 4.0/4.0</p>
-                <p>Dean’s List: May 2023, December 2023</p>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <header class="col-md-2 bg-dark text-light vh-100 d-flex flex-column justify-content-center position-fixed">
+            <div class="p-3">
+                <h1 class="h4">jamil shah</h1>
+                <p>Senior at <a href="https://msu.edu" class="text-light">Michigan State University</a></p>
+                <p>Student Assistant at <a href="https://www.michigan.gov/dtmb" class="text-light">State of Michigan (DTMB)</a></p>
+                <nav>
+                    <ul class="list-unstyled">
+                        <li class="my-2"><a href="index.html" class="text-light">Home</a>
+                            <ul class="list-unstyled dropdown">
+                                <li class="my-2"><a href="about.html" class="text-light">About Me</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
             </div>
+        </header>
             
-            <div class="coursework">
-                <h4>Relevant Coursework:</h4>
-                <ul>
-                    <li>IT Network Management and Security</li>
-                    <li>Applied Programming for Physical Scientists & Engineers II</li>
-                    <li>Media & Information Research</li>
-                    <li>Digital Footprints: Privacy and Online Behavior</li>
-                    <li>Media & Information Management</li>
-                </ul>
-            </div>
+            <main class="col-md-10 offset-md-2 bg-light vh-100">
+                <div class="p-5">
+                    <section id="home">
+                        <h2 class="h5">Home</h2>
+                        <p>jamilshah.com, a professional portfolio, is my journey and expertise in Cybersecurity, Information Security, and Computer Science. Showcased through my education, background, skills, and hands-on experience with projects.</p>
+                    </section>
+                    
+                    <section id="resume">
+                        <div class="mt-5">
+                            <h2 class="h5">Education</h2>
+                            <p><strong>Michigan State University, East Lansing, MI</strong></p>
+                            <p>Bachelor of Arts in Information Science</p>
+                            <p>Minor: Security Management</p>
+                            <p>GPA: 4.0/4.0</p>
+                            <p>Dean’s List: May 2023, December 2023</p>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <h3 class="h6">Relevant Coursework:</h3>
+                            <ul>
+                                <li>IT Network Management and Security</li>
+                                <li>Applied Programming for Physical Scientists & Engineers II</li>
+                                <li>Media & Information Research</li>
+                                <li>Digital Footprints: Privacy and Online Behavior</li>
+                                <li>Media & Information Management</li>
+                            </ul>
+                        </div>
 
-            <div class="experience">
-                <h3>Related Experience</h3>
-                <p><strong>Research Lab Assistant</strong> (January 2023 – Present)</p>
-                <p>Professor Celeste Campos-Castillo’s Research Lab, Michigan State University</p>
-                <p>Collaborated with team members to streamline data analysis processes for research on public perception and sentiment towards ChatGPT.</p>
-                <p>Utilized BERT topic modeling and sentiment analysis techniques on over 450,000 Reddit posts.</p>
-                <p>Contributed to data collection, cleaning, and preprocessing to ensure dataset accuracy and consistency.</p>
-                
-                <p><strong>Cybersecurity Course Completion</strong> (September 2023 – November 2023)</p>
-                <p>CodePath Cybersecurity Course (Online)</p>
-                <p>Implemented email traffic inspection and PCAP file analysis using Wireshark to identify fraudulent activity.</p>
-                <p>Configured file integrity validation using Wazuh to detect modified files on a host system.</p>
-                <p>Conducted a direct traversal attack against an FTP server and analyzed logs to mitigate the attack.</p>
-                <p>Developed rules to detect and respond to DoS attacks on a proxy server using nginx.</p>
-                
-                <p><strong>American Society for Mechanical Engineers (ASME)</strong> (October 2019 – May 2020)</p>
-                <p>University of Michigan Flint Chapter</p>
-                <p>Electrical Systems Sub-Team</p>
-                <p>Placed 2nd in the 2020 ASME IAM3D Unmanned Aerial Racing Cargo Vehicle competition.</p>
-                <p>Analyzed data from drone tests to optimize performance.</p>
-                <p>Designed electronic drone plans, mastering CAD and soldering techniques.</p>
-            </div>
-            
-            <div class="professional-experience">
-                <h3>Professional Experience</h3>
-                <p><strong>Student Assistant</strong> (June 2023 – Present)</p>
-                <p>State of Michigan, Dimondale, MI</p>
-                <p>Created emissions reports through MiEnviro (Michigan Air Emissions Reporting System) for EGLE (Department of Environment, Great Lakes, and Energy).</p>
-                <p>Provided administrative and technical support including data entry, document creation, and correspondence drafting.</p>
-                <p>Proficient in Microsoft Office (Excel, Word) and report tracking systems.</p>
-            </div>
-            
-            <div class="skills-certifications">
-                <h3>Skills & Certifications</h3>
-                <p>Languages: Fluent in Farsi and English; Intermediate in French and Urdu</p>
-                <p>Certifications: CodePath Intermediate Cybersecurity Certificate</p>
-                <p>Tools: Wireshark, Wazuh, Splunk, Catalyst, MISP</p>
-                <p>Expertise: Security analysis, incident response, threat hunting</p>
-                <p>Protocols: SSH, SSL, SIEM systems</p>
-            </div>
-        </section>
-    </main>
+                        <div class="mt-5">
+                            <h2 class="h5">Related Experience</h2>
+                            <p><strong>Research Lab Assistant</strong> (January 2023 – Present)</p>
+                            <p>Professor Celeste Campos-Castillo’s Research Lab, Michigan State University.</p>
+                            <p>Collaborated with team members to streamline data analysis processes for research on public perception and sentiment towards ChatGPT.</p>
+                            <p>Utilized BERT topic modeling and sentiment analysis techniques on over 450,000 Reddit posts.</p>
+                            <p>Contributed to data collection, cleaning, and preprocessing to ensure dataset accuracy and consistency.</p>
+                            
+                            <p><strong>Cybersecurity Course Completion</strong> (September 2023 – November 2023)</p>
+                            <p>CodePath Cybersecurity Course (Online)</p>
+                            <p>Implemented email traffic inspection and PCAP file analysis using Wireshark to identify fraudulent activity.</p>
+                            <p>Configured file integrity validation using Wazuh to detect modified files on a host system.</p>
+                            <p>Conducted a direct traversal attack against an FTP server and analyzed logs to mitigate the attack.</p>
+                            <p>Developed rules to detect and respond to DoS attacks on a proxy server using nginx.</p>
+                            
+                            <p><strong>American Society for Mechanical Engineers (ASME)</strong> (October 2019 – May 2020)</p>
+                            <p>University of Michigan Flint Chapter</p>
+                            <p>Electrical Systems Sub-Team</p>
+                            <p>Placed 2nd in the 2020 ASME IAM3D Unmanned Aerial Racing Cargo Vehicle competition.</p>
+                            <p>Analyzed data from drone tests to optimize performance.</p>
+                            <p>Designed electronic drone plans, mastering CAD and soldering techniques.</p>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <h2 class="h5">Professional Experience</h2>
+                            <p><strong>Student Assistant</strong> (June 2023 – Present)</p>
+                            <p>State of Michigan, Dimondale, MI</p>
+                            <p>Created emissions reports through MiEnviro (Michigan Air Emissions Reporting System) for EGLE (Department of Environment, Great Lakes, and Energy).</p>
+                            <p>Provided administrative and technical support including data entry, document creation, and correspondence drafting.</p>
+                            <p>Proficient in Microsoft Office (Excel, Word) and report tracking systems.</p>
+                        </div>
+                        
+                        <div class="mt-5">
+                            <h2 class="h5">Skills & Certifications</h2>
+                            <p>Languages: Fluent in Farsi and English; Intermediate in French and Urdu</p>
+                            <p>Certifications: CodePath Intermediate Cybersecurity Certificate</p>
+                            <p>Tools: Wireshark, Wazuh, Splunk, Catalyst, MISP</p>
+                            <p>Expertise: Security analysis, incident response, threat hunting</p>
+                            <p>Protocols: SSH, SSL, SIEM systems</p>
+                        </div>
+                    </section>
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
